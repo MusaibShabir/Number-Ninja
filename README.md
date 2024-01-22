@@ -1,5 +1,5 @@
 ## Number Ninja
 
-## Secreenshots
-<img src="Screenshots" alt="Screenshot">
+## Secrenshots
+<img src="Screnshots/Screnshots.png" alt="Screenshot">
 
