@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">NumberNinja</string>
+    <string name="home_name">Number Ninja</string>
+    <string name="intro_head">New Problem</string>
+    <string name="intro_title">Here is your problem. Let\'s see, can you solve this one 😃</string>
+    <string name="submit_button">Submit</string>
+    <string name="skip_button">Skip</string>
+    <string name="game_score_head">Your Score:</string>
+    <string name="game_score">%d</string>
+    <string name="wrong_answer">Wrong Answer</string>
+    <string name="enter_your_answer">Enter your answer</string>
+    <string name="wrong_guess">Wrong Solution Try Again 🫣</string>
+    <string name="congratulations">Congratulations 🥳🥳🥳</string>
+    <string name="you_scored">You scored: %d</string>
+    <string name="exit">Exit</string>
+    <string name="play_again">Play Again</string>
+</resources>
