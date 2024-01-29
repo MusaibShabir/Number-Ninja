@@ -33,6 +33,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.numberninja.R
+import com.example.numberninja.ui.theme.CustomShapes
 
 @Composable
 fun RandomProblem(
@@ -53,7 +54,7 @@ fun RandomProblem(
         ) {
             Text(
                 text = currentProblem,
-                fontSize = 40.sp
+                fontSize = 40.sp,
             )
         }
     }
@@ -112,7 +113,7 @@ fun Score(modifier: Modifier, score: Int) {
             .fillMaxHeight(.1f)
             .padding(bottom = 10.dp),
 
-        shape = CardDefaults.elevatedShape,
+        shape = CustomShapes.medium,
         colors = CardDefaults.cardColors(Color.White),
         elevation = CardDefaults.cardElevation(10.dp),
         border = BorderStroke(2.dp, (MaterialTheme.colorScheme.primary)),

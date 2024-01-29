@@ -1,7 +1,6 @@
 package com.example.numberninja.ui
 
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -30,6 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.numberninja.R
+import com.example.numberninja.ui.theme.CustomShapes
 import com.example.numberninja.ui.theme.NumberNinjaTheme
 
 
@@ -68,9 +68,10 @@ fun HomeScreen(modifier: Modifier = Modifier,homeViewModel: HomeViewModel = view
                     .fillMaxWidth()
                     .fillMaxHeight(.5f),
 
-                shape = CardDefaults.elevatedShape,
+
                 colors = CardDefaults.cardColors(Color.White),
                 elevation = CardDefaults.cardElevation(10.dp),
+                shape = CustomShapes.small,
                 border = BorderStroke(2.dp, (MaterialTheme.colorScheme.primary)),
 
                 ) {
@@ -108,8 +109,10 @@ fun HomeScreen(modifier: Modifier = Modifier,homeViewModel: HomeViewModel = view
             Spacer(modifier = modifier.height(10.dp))
 
             Button(
-                modifier = Modifier.fillMaxWidth(),
-                onClick = { homeViewModel.checkUserGuess() }
+                modifier = Modifier
+                    .fillMaxWidth(),
+                onClick = { homeViewModel.checkUserGuess()},
+                shape = CustomShapes.large
             ) {
                 Text(
                     text = stringResource(id = R.string.submit_button),
@@ -119,7 +122,8 @@ fun HomeScreen(modifier: Modifier = Modifier,homeViewModel: HomeViewModel = view
 
             OutlinedButton(
                 onClick = { homeViewModel.newProblem() },
-                modifier = Modifier.fillMaxWidth()
+                modifier = Modifier.fillMaxWidth(),
+                shape = CustomShapes.large
             ) {
                 Text(
                     text = stringResource(id = R.string.skip_button),
