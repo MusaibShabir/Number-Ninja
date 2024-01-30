@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NumberNinja</string>
+    <string name="app_name">Number Ninja</string>
     <string name="home_name">Number Ninja</string>
     <string name="intro_head">New Problem</string>
     <string name="intro_title">Here is your problem. Let\'s see, can you solve this one 😃</string>
