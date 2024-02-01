@@ -2,8 +2,8 @@
 <resources>
 
     <style name="Theme.NumberNinja.MySplash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">#000000</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_screen_dark</item>
+        <item name="windowSplashScreenBackground">#141218</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash</item>
         <item name="android:windowSplashScreenAnimationDuration">2000</item>
         <item name="postSplashScreenTheme">@style/Theme.NumberNinja</item>
     </style>
